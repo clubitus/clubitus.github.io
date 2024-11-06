@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Printer</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<!-- This class contains the infos on top of the screen : Money,stats......... -->
+  <div class = topscreen>
+  <p>Money : <span id='money'></span>$</p>
+  <p>Cash Flow : <span id='cashflow'></span>/sec</p>
+  </div>
+<!-- This class contains the first part of the game -->
+  <div class = warehouse>
+    <div class = whStats>
+      <p>wares: <span id='wareAmt'></span></p>
+    
+    
+    </div>
+    <div class = printers>
+      <h1>printers</h1>
+      <button onclick = printMoney() id = 'prntBTN'>Print</button>
+      <p>Level : <span id='printerLvl'></span></p>
+      <p>Ammout : <span id='printerAmt'></span></p>
+      <p>Interns : <span id='printerIntern'></span></p>
+      <p>Intern Spd : <span id='printerInternSpd'></span></p>
+      <button onclick = upgPrntLvl()> Upgrade Level : <span id='printerLvlPrice'></span>$</button>
+      <button onclick = upgPrntAmt()> Add Printer : <span id='printerAmtPrice'></span>$</button>
+      <button onclick = upgPrntInt()>Hire Intern : <span id='printerInternPrice'></span>$</button>
+      <button onclick = upgPrntIntSpd()>Energize Intern : <span id='printerInternSpdPrice'></span>$</button>
+    </div>
+  </div>
+<script src="main.js"></script>
+</body>
+</html>
